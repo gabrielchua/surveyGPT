@@ -7,7 +7,7 @@ import openai
 st.title("surveyGPT")
 
 openai.api_type = 'azure'
-openai.api_base = 'https://launchpad-assistant-api.launchpad.tech.gov.sg/services/openai/'
+openai.api_base = st.secrets["launchpad_url"]
 openai.api_version = '2023-03-15-preview'
 openai.api_key = st.secrets["launchpad_key"]
 
