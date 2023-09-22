@@ -37,6 +37,8 @@ if "messages" not in st.session_state.keys():
 ###
 st.set_page_config(layout="wide")
 st.title("Survey GPT")
+st.write("This version uses langchain agents")
+
 
 openai.api_key = st.secrets["openai_key"]
 

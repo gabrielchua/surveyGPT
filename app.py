@@ -5,6 +5,8 @@ from pandasql import sqldf
 import openai
 
 st.title("Survey GPT")
+st.write("This version uses DIY prompting")
+
 
 openai.api_type = 'azure'
 openai.api_base = st.secrets["launchpad_url"]
@@ -87,6 +89,9 @@ def ask_dataset(df, query):
 
 #########
 if uploaded_file is not None:
+
+    st.markdown("### Please upload your dataset on the left")
+
 
     if "messages" not in st.session_state.keys():
         st.session_state.messages = [{"role": "assistant", "content": f"Thanks for uploading your dataset (N={num_rows}). How may I help you today?"}]
