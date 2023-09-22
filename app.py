@@ -4,7 +4,7 @@ import pandas as pd
 from pandasql import sqldf
 import openai
 
-st.title("Excel GPT")
+st.title("Survey GPT")
 
 openai.api_type = 'azure'
 openai.api_base = st.secrets["launchpad_url"]

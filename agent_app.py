@@ -36,7 +36,7 @@ if "messages" not in st.session_state.keys():
 
 ###
 st.set_page_config(layout="wide")
-st.title("Excel GPT")
+st.title("Survey GPT")
 
 openai.api_key = st.secrets["openai_key"]
 
